@@ -13,10 +13,10 @@ auth.onAuthStateChanged((data) => {
 });
 // on 이 붙으면 이벤트 실행/ auth의 상태가 변화되면 onAuth를 실행.
 
-document.querySelector("#btLogin").addEventListener("click", e => {
-	auth.signInWithRedirect(google);
+document.querySelector("#btLogin").addEventListener("click", () => {
+	//auth.signInWithRedirect(google);
 	//페이지에서 새창에서 구글을 실행(팝업창), 넘어가서 로그인이 되었다가 다시 페이지로 돌아옴..
-	//auth.signInWithPopup(google);
+	auth.signInWithPopup(google);
 });
 document.querySelector("#btLogout").addEventListener("click", e => {
 	auth.signOut();
@@ -36,8 +36,7 @@ function viewChg(state) {
 				document.querySelector(".email").style.display = "flex";
 				document.querySelector("#btLogin").style.display = "none";
 			});//이미지가성공하면 상단 내용이진행됨.
-			document.querySelector(".email img").setAttribute("src", user.photoURL);
-
+				document.querySelector(".email img").setAttribute("src", user.photoURL);
 			break;
 		default:
 			document.querySelector(".email > div").innerHTML = "";
