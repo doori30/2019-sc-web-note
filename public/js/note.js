@@ -122,7 +122,7 @@ function dataGet(obj) {
 	db.ref("root/notes/"+user.uid + "/" +nowKey).once("value").then((data) => {
 		_content.value = data.val().content;
 	});
-	//                                이벤트가 단한번만 실행이 가능하다.(값)을 가져온 이후(then) 함수를 실행(functuin)
+	// .once이벤트는 단한번만 실행이 가능하다.(값)을 가져온 이후(then) 함수를 실행(functuin)
   }
 
 //onClick-btWing
