@@ -44,6 +44,11 @@ firebase init
 	<script src="../js/note.js"></script>
 ```
 2. 프로젝트 구동
-	*
-	*
-	*
+	* 개발중일 때 (개별적 node 서버를 구동, 확인하여 개별한다.)
+	```
+	firebase serve
+	```
+	* 실제 서비스를 배포할 때
+	```
+	firebase deploy
+	```
