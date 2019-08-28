@@ -43,3 +43,7 @@ firebase init
 	<script src="../js/util.js"></script>
 	<script src="../js/note.js"></script>
 ```
+2. 프로젝트 구동
+	*
+	*
+	*
